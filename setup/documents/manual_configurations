@@ -1,0 +1,25 @@
+Tweak Tool:
+	Appearance
+		Global Dark Theme => Enable
+
+	Extensions
+		Dash to Dock => Intelligent Autohide => Disable pressure requirement
+		Install additional extensions => Install gTile
+
+Settings:
+	Power
+		Screen Timeout => Disable
+
+	Keyboard
+		Add shortcut
+			super + t => gnome-terminal
+
+Favorites Bar:
+	Firefox
+	Terminal
+	KeepNote
+
+Additional Tasks
+	Login to GitHub
+		Username: anonzak
+
