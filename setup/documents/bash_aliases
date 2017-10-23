@@ -1,0 +1,9 @@
+alias msfconsole="sudo msfconsole -r /scripts/rebuild_cache.rc"
+alias nessus="/scripts/nessus.rb"
+#alias metasploit="sudo /scripts/metasploit.sh"
+alias beef="sudo service beef-xss"
+alias burp="sudo /opt/BurpSuitePro/BurpSuitePro"
+alias zap="sudo /usr/bin/owasp-zap"
+alias brutespray="sudo /etc/brutespray/brutespray.py"
+
+add_alias="/scripts/add_alias.sh"
