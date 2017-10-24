@@ -83,9 +83,9 @@ end
 
 case ARGV[0]
 	when "start"
+		user_management()
 		scripts()
 		aliases()
-		user_management()
 		manual_configurations()	
 	else
 		help()
