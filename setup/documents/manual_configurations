@@ -1,7 +1,6 @@
 Tweak Tool:
 	Appearance
 		Global Dark Theme => Enable
-
 	Extensions
 		Dash to Dock => Intelligent Autohide => Disable pressure requirement
 		Install additional extensions => Install gTile
@@ -9,17 +8,27 @@ Tweak Tool:
 Settings:
 	Power
 		Screen Timeout => Disable
-
 	Keyboard
 		Add shortcut
 			super + t => gnome-terminal
+	Date and Time
+		Change time zone
 
 Favorites Bar:
 	Firefox
 	Terminal
 	KeepNote
+	
+Firefox
+	Privacy => Uncheck all items under "Location Bar"
+	Security => Uncheck "Remember Logins"
+	Install Theme => https://addons.mozilla.org/en-US/firefox/addon/circular-logic/
+	
 
 Additional Tasks
 	Login to GitHub
 		Username: anonzak
-
+	Copy links
+		Student Control Panel
+		Forums
+		Support
