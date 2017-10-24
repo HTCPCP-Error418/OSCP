@@ -12,7 +12,7 @@ def help()
 	puts "This script will also create a 'manual_configurations' file in the new user's directory"
 	puts "The 'manual_configurations' file will list further actions for the user"
 	puts ""
-	puts "To begin, run 'kali_setup.rb start"
+	puts "To begin, run 'kali_setup.rb start'"
 	puts ""
 	puts "Help Mode executed successfully..."
 	puts "Exiting Help Mode..."
