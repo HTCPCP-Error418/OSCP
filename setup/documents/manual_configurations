@@ -2,7 +2,9 @@ Tweak Tool:
 	Appearance
 		Global Dark Theme => Enable
 	Extensions
-		Dash to Dock => Intelligent Autohide => Disable pressure requirement
+		Dash to Dock
+			Move to right
+			Intelligent Autohide => Disable pressure requirement
 		Install additional extensions => Install gTile
 
 Settings:
