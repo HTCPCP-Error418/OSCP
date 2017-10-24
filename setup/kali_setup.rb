@@ -81,12 +81,25 @@ def manual_configurations()
 end
 
 
+def remove_bell()
+	puts "Entering Stealth Mode..."
+	puts ""
+	puts "	Subprocess: Silencing alerts..."
+		`echo set bell-style none >> /home/zak/.inputrc`
+		`echo set bell-style none >> /root/.inputrc`
+	puts "All alerts silenced..."
+	puts "Stealth mode activated..."
+	puts ""
+end
+
+
 case ARGV[0]
 	when "start"
 		user_management()
 		scripts()
 		aliases()
 		manual_configurations()	
-	else
+		remove_bell()
+else
 		help()
 end
