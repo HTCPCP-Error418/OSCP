@@ -8,6 +8,7 @@ Tweak Tool:
 		gTile
 			Basic => uncheck "bottom panel present"
 				restart gnome (alt+f2 r)
+			"Acelerators" => Display gTile = super + space
 
 Settings:
 	Power
