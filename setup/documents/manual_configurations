@@ -5,6 +5,9 @@ Tweak Tool:
 		Dash to Dock
 			Move to right
 			Intelligent Autohide => Disable pressure requirement
+		gTile
+			Basic => uncheck "bottom panel present"
+				restart gnome (alt+f2 r)
 
 Settings:
 	Power
