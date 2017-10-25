@@ -93,6 +93,16 @@ def remove_bell()
 end
 
 
+def gtile()
+	puts "Configuring HUD..."
+		`git clone https://github.com/vibou/vibou.gTile.git /home/zak/.local/share/gnome-shell/extensions/gTile@vibou`
+	puts "Restarting HUD..."
+		`gnome-shell --replace`
+	puts "HUD configuration successful..."
+	puts ""
+end
+
+
 case ARGV[0]
 	when "start"
 		user_management()
@@ -100,6 +110,7 @@ case ARGV[0]
 		aliases()
 		manual_configurations()	
 		remove_bell()
+		gtile()
 else
 		help()
 end
