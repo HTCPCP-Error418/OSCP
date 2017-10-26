@@ -1,0 +1,2 @@
+Add to snmp_walk.rb to bruteforce the community strings with onesixtyone
+  Hash table?
