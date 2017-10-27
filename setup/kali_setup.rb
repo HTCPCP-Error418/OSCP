@@ -103,6 +103,14 @@ def gtile()
 end
 
 
+def bc()
+	puts "Installing additional modules..."
+		`apt-get install bc -y`
+	puts "Additional modules installed successfully..."
+	puts ""
+end
+
+
 case ARGV[0]
 	when "start"
 		user_management()
@@ -111,6 +119,7 @@ case ARGV[0]
 		manual_configurations()	
 		remove_bell()
 		gtile()
+		bc()
 else
 		help()
 end
