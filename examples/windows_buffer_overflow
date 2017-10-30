@@ -3,7 +3,8 @@
 =begin
         takes advantage of the LONG_PASS buffer overflow vulnerability in SLMAIL.
         uses windows/shell_reverse_tcp payload
-        encoded with x86/shitaka_ga_nai
+                connects to 10.11.0.155:1234
+        encoded with 1 pass of x86/shitaka_ga_nai
 =end
 
 require 'socket'
