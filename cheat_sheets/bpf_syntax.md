@@ -12,11 +12,29 @@ If there is no type qualifier, host is assumed.
       
 **dir**
 
-    qualifiers specify a particular transfer direction to and/or from id. Possible directions are src, dst, src or dst and src and dst. E.g., `src foo', `dst net 128.3', `src or dst port ftp-data'. If there is no dir qualifier, src or dst is assumed. For some link layers, such as SLIP and the ``cooked'' Linux capture mode used for the ``any'' device and for some other device types, the inbound and outbound qualifiers can be used to specify a desired direction. 
-proto
-    qualifiers restrict the match to a particular protocol. Possible protos are: ether, fddi, tr, wlan, ip, ip6, arp, rarp, decnet, tcp and udp. E.g., `ether src foo', `arp net 128.3', `tcp port 21', `udp portrange 7000-7009'. If there is no proto qualifier, all protocols consistent with the type are assumed. E.g., `src foo' means `(ip or arp or rarp) src foo' (except the latter is not legal syntax), `net bar' means `(ip or arp or rarp) net bar' and `port 53' means `(tcp or udp) port 53'. 
+qualifiers specify a particular transfer direction to and/or from id. Possible directions are:
+ **src**, **dst**, **src or dst**, and **src and dst**.
+ 
+ ````src foo', `dst net 128.3', `src or dst port ftp-data'``` 
+ 
+ If there is no dir qualifier, src or dst is assumed. 
+ 
+ For some link layers, such as SLIP and the ``cooked'' Linux capture mode used for the ``any'' device and for some other device types, the inbound and outbound qualifiers can be used to specify a desired direction. 
 
-`fddi' is actually an alias for `ether'; the parser treats them identically as meaning ``the data link level used on the specified network interface.'' FDDI headers contain Ethernet-like source and destination addresses, and often contain Ethernet-like packet types, so you can filter on these FDDI fields just as with the analogous Ethernet fields. FDDI headers also contain other fields, but you cannot name them explicitly in a filter expression.
+**proto**
+
+qualifiers restrict the match to a particular protocol. Possible protos are: 
+ **ether**, **fddi**, **tr**, **wlan**, **ip**, **ip6**, **arp**, **rarp**, **decnet**, **tcp**, and **udp**. 
+ 
+ ````ether src foo', `arp net 128.3', `tcp port 21', `udp portrange 7000-7009'```
+ 
+ If there is no proto qualifier, all protocols consistent with the type are assumed.
+ 
+ ````src foo' means `(ip or arp or rarp) src foo' (except the latter is not legal syntax), `net bar' means `(ip or arp or rarp) net bar' and `port 53' means `(tcp or udp) port 53'```
+
+-------------------------------------------
+
+*fddi* is actually an alias for *ether*; the parser treats them identically as meaning ``the data link level used on the specified network interface.'' FDDI headers contain Ethernet-like source and destination addresses, and often contain Ethernet-like packet types, so you can filter on these FDDI fields just as with the analogous Ethernet fields. FDDI headers also contain other fields, but you cannot name them explicitly in a filter expression.
 
 Similarly, `tr' and `wlan' are aliases for `ether'; the previous paragraph's statements about FDDI headers also apply to Token Ring and 802.11 wireless LAN headers. For 802.11 headers, the destination address is the DA field and the source address is the SA field; the BSSID, RA, and TA fields aren't tested.
 
