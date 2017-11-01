@@ -1,4 +1,4 @@
-Usage: cscript wget.vbs [URL (including file)]
+Usage: cscript wget.vbs [URL (including file)] [filename to save to]
 
 
 
