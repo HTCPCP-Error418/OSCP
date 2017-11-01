@@ -1,3 +1,9 @@
+Usage: cscript wget.vbs [URL (including file)]
+
+
+
+
+
 echo strUrl = WScript.Arguments.Item(0) > wget.vbs
 echo StrFile = WScript.Arguments.Item(1) >> wget.vbs
 echo Const HTTPREQUEST_PROXYSETTING_DEFAULT = 0 >> wget.vbs
