@@ -103,9 +103,10 @@ def gtile()
 end
 
 
-def bc()
+def additional()
 	puts "Installing additional modules..."
 		`apt-get install bc -y`
+		`gem install rb2exe`
 	puts "Additional modules installed successfully..."
 	puts ""
 end
@@ -119,7 +120,7 @@ case ARGV[0]
 		manual_configurations()	
 		remove_bell()
 		gtile()
-		bc()
+		additional()
 else
 		help()
 end
