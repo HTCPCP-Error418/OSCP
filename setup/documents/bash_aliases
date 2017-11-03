@@ -4,5 +4,5 @@ alias beef="sudo service beef-xss"
 alias burp="sudo /opt/BurpSuitePro/BurpSuitePro"
 alias zap="sudo /usr/bin/owasp-zap"
 alias brutespray="sudo /etc/brutespray/brutespray.py"
-
-add_alias="/scripts/add_alias.sh"
+alias add_alias="/scripts/add_alias.sh"
+alias please="sudo $(history -p \!\!)"
