@@ -4,6 +4,7 @@
 
 import java.applet.*;
 import java.awt.*;
+import java.io.*;
 import java.net.URL;
 import java.util.*;
 
