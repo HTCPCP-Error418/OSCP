@@ -105,7 +105,7 @@ end
 
 def additional()
 	puts "Installing additional modules..."
-		`apt-get install bc -y`
+		`apt-get install bc rinetd -y`
 		`gem install rb2exe`
 	puts "Additional modules installed successfully..."
 	puts ""
