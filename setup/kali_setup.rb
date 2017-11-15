@@ -96,6 +96,10 @@ end
 def gtile()
 	puts "Configuring HUD..."
 		`git clone https://github.com/vibou/vibou.gTile.git /home/zak/.local/share/gnome-shell/extensions/gTile@vibou`
+		`git clone https://github.com/phocean/TopIcons-plus.git /home/zak/.local/share/gnome-shell/extensions/TopIcon`
+		`cd /home/zak/.local/share/gnome-shell/extensions/TopIcon`
+		`make install`
+		`cd /`
 	puts "Restarting HUD..."
 		`gnome-shell --replace`
 	puts "HUD configuration successful..."
