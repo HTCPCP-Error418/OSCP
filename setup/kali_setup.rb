@@ -104,9 +104,10 @@ end
 
 
 def additional()
-	puts "Installing additional modules..."
+	puts "Installing Additional Modules..."
 		`apt-get install bc rinetd -y`
 		`gem install rb2exe`
+		`update-rc.d postgresql start`
 	puts "Additional modules installed successfully..."
 	puts ""
 end
