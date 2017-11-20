@@ -107,6 +107,17 @@ def gtile()
 end
 
 
+def recon_tools()
+	puts "Configuring Intel Feed..."
+		`cd /opt/`
+		`git clone https://github.com/frizb/Vanquish`
+		`cd Vanquish`
+		`python Vanquish2.py --install`
+	puts "Intel feed configured successfully..."
+	puts ""
+end
+
+
 def additional()
 	puts "Installing Additional Modules..."
 		`apt-get install bc rinetd -y`
@@ -126,6 +137,7 @@ case ARGV[0]
 		remove_bell()
 		gtile()
 		additional()
+		recon_tools()
 else
 		help()
 end
