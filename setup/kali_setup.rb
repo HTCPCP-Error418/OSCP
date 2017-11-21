@@ -113,6 +113,8 @@ def recon_tools()
 		`git clone https://github.com/frizb/Vanquish`
 		`cd Vanquish`
 		`python Vanquish2.py --install`
+		`cd /opt/`
+		`git clone https://github.com/superkojiman/onetwopunch`
 	puts "Intel feed configured successfully..."
 	puts ""
 end
