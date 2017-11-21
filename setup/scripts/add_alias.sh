@@ -9,5 +9,6 @@ read alias_name
 echo 'please enter the alias command (without quotes):'
 read alias_command
 
-echo alias $alias_name\=\"$alias_command\" >> /home/zak/.bash_aliases		#add alias to user 'zak'
-sudo echo alias $alias_name\=\"$alias_command\" >> /root/.bash_aliases	#add alias to user 'root'
+echo alias $alias_name\=\'$alias_command\' >> /home/zak/.bash_aliases		#add alias to user "zak"
+echo alias $alias_name\=\'$alias_command\' >> /root/.bash_aliases	      #add alias to user "root"
+echo $alias_name\=\'$alias_command\'                                    #echo to terminal for error checking
