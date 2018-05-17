@@ -24,7 +24,7 @@
 | `+[term]`           | Show results with this word exactly, do not include related words      |
 | `-[term]`           | Show results that do not include this word                             |
 | `"[term] * [term]"` | Wildcard - Search for anything between the two words, but include both |
-| `OR` or `|`         | Return results for either term                                         |
+| `OR` or `\|`        | Return results for either term                                         |
 | `AND` or `&`        | Return results for both terms                                          |
 
 ## Email Address Harvesting
@@ -41,21 +41,21 @@
 
 ## DNS Enumeration
 
-** Forward Lookups **
+#### Forward Lookups
 * Used to find the IP of a server using the server name
 * Good for collecting information on the network structure
 * Requires a list of commonly used subdomains for services
 
-** Reverse Lookups **
+#### Reverse Lookups
 * Used to find the server name of an IP
 * Good for finding servers that may have been missed in the forward lookup by using their IPs as the range
 
-** Zone Transfer **
+#### Zone Transfer
 * Can possibly provide all public and/or private hostnames, IPs, and functionality of servers and endpoints for the target network
 
 ### DNS Enumeration Tools
 
-** Dig **
+#### Dig
 * Can be used to conduct forward and reverse DNS lookups and can use local DNS servers
 * Reverse Lookup: `dig -x [Target IP] @[Local DNS Server]`
 * Forward Lookup: `dig [FQDN] @[Local DNS Server]`
