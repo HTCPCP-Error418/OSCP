@@ -56,7 +56,19 @@
 ### DNS Enumeration Tools
 
 #### Dig
-* Can be used to conduct forward and reverse DNS lookups and can use local DNS servers
 * Reverse Lookup: `dig -x [Target IP] @[Local DNS Server]`
 * Forward Lookup: `dig [FQDN] @[Local DNS Server]`
 
+#### dnsrecon
+
+#### dnsenum
+
+## Port Scanning
+* Most port scanners default to only scanning TCP ports; however, UDP ports should be scanned as well
+* When conducting a port scan, begin with the most common ports and follow up with a full port scan
+
+### Common Types of Port Scans
+* `TCP Connect Scans` are commonly the default scan type and completes a full 3-way handshake
+* `TCP Half Connect\Half Open\Stealth Scans` begin a 3-way handshake; however, the final ACK packet is replaces with a RST packet
+* `UDP Scans` send an empty UDP packet to the target ports
+  * UDP ports are able to filter packets based on the packet contents, making UDP scans somewhat unreliable
