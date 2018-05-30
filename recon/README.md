@@ -69,6 +69,6 @@
 
 ### Common Types of Port Scans
 * `TCP Connect Scans` are commonly the default scan type and completes a full 3-way handshake
-* `TCP Half Connect\Half Open\Stealth Scans` begin a 3-way handshake; however, the final ACK packet is replaces with a RST packet
+* `TCP Half Connect\Half Open\Stealth Scans` begin a 3-way handshake; however, the final ACK packet is replaced with a RST packet
 * `UDP Scans` send an empty UDP packet to the target ports
   * UDP ports are able to filter packets based on the packet contents, making UDP scans somewhat unreliable
