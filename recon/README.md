@@ -1,6 +1,16 @@
+#Table of Contents:
+   [Passive Recon](#passive-recon)
+      [General Information Collection](#general-information-collection)
+      [Targeted Information Collection](#targeted-information-collection)
+   [Active Recon](#active-recon)
+      [DNS](#dns-enumeration)
+      [Port Scanning](#port-scanning)
+      
+
 # Passive Recon
 
-## Good open-source information sites:
+## General Information Collection
+### Common open-source information sites:
 * Google
 * Company's Public Website
 * LinkedIn
@@ -8,7 +18,7 @@
 * Pipl
 * Spokeo
 
-## [Google Dorking Reference](https://www.alienvault.com/blog-content/GoogleHackingCheatSheet.pdf)
+### [Google Dorking Reference](https://www.alienvault.com/blog-content/GoogleHackingCheatSheet.pdf)
 
 | Parameter           | Description                                                            |
 | :-----------------: | ---------------------------------------------------------------------- |
@@ -27,13 +37,14 @@
 | `OR` or `\|`        | Return results for either term                                         |
 | `AND` or `&`        | Return results for both terms                                          |
 
-## Email Address Harvesting
+## Targeted Information Collection
+### Email Address Harvesting
 * `TheHarvester` can be used to crawl sites for email addresses
 
-## Web Server Information
+### Web Server Information
 * [NetCraft](http://searchdns.netcraft.com/)
 
-## Registry Information
+### Registry Information
 * [WhoIs](https://whois.icann.org/en)
 
 
